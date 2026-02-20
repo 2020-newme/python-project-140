@@ -30,7 +30,7 @@ def welcome_user():
     return name
 
 def random_number():
-    return random.randint(1, 100)
+    return random.randint(1, 99)
 
 
 def prime_number(num1):
@@ -39,13 +39,9 @@ def prime_number(num1):
         return 'no'
     if num1%3 == 0:
         return 'no'
-    if num1%4 == 0:
-        return 'no'
     if num1%5 == 0:
         return 'no'
     if num1%7 == 0:
-        return 'no'
-    if num1%9 == 0:
         return 'no'
     if num1%11 == 0:
         return 'no'
