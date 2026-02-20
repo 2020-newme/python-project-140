@@ -3,18 +3,26 @@ import prompt
 import random
 
 def main():
-    num1 = random_number()
+    counter = 0
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    print (f'Question: {num1}')
-    answer = prompt.string('Your answer: ')
-    expected_answer = prime_number(num1)
     
-    if expected_answer == answer:
-        print (f'Correct!')
-    else:
-        print (f"{answer} is wrong answer ;(. Correct answer was {expected_answer}.")
+    while counter < 3:
+        num1 = random_number()
+        expected_answer = prime_number(num1)
+        print (f'Question: {num1}')
+        answer = prompt.string('Your answer: ')
+
+        if expected_answer == answer:
+            print (f'Correct!')
+            counter +=1
+            
+        else:
+            print (f"{answer} is wrong answer ;(. Correct answer was {expected_answer}.")
+            quit()
+            
+    print (f'Congratulations, {name}!')  
 
 def welcome_user():
     name = prompt.string('May I have your name? ')
