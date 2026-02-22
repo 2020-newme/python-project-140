@@ -20,6 +20,7 @@ def main():
             
         else:
             print (f"{answer} is wrong answer ;(. Correct answer was {expected_answer}.")
+            print (f"Let's try again, {name}!")
             quit()
             
     print (f'Congratulations, {name}!')  
