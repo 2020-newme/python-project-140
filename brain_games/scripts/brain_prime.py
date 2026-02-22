@@ -35,7 +35,7 @@ def random_number():
 
 def prime_number(num1):
     
-    if num1%2 == 0:
+    if num1%2 == 0 and num is not 2:
         return 'no'
     if num1%3 == 0:
         return 'no'
