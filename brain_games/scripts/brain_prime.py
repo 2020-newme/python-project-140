@@ -1,6 +1,7 @@
-from brain_games import cli
-import prompt  
 import random
+
+import prompt
+
 
 def main():
     counter = 0
@@ -11,24 +12,27 @@ def main():
     while counter < 3:
         num1 = random_number()
         expected_answer = prime_number(num1)
-        print (f'Question: {num1}')
+        print(f'Question: {num1}')
         answer = prompt.string('Your answer: ')
 
         if expected_answer == answer:
-            print (f'Correct!')
-            counter +=1
+            print('Correct!')
+            counter += 1
             
         else:
-            print (f"{answer} is wrong answer ;(. Correct answer was {expected_answer}.")
-            print (f"Let's try again, {name}!")
+            print(f"{answer} is wrong answer ;(."
+                   + " Correct answer was {expected_answer}.")
+            print(f"Let's try again, {name}!")
             quit()
             
-    print (f'Congratulations, {name}!')  
+    print(f'Congratulations, {name}!')  
+
 
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
+
 
 def random_number():
     return random.randint(1, 99)
@@ -36,15 +40,15 @@ def random_number():
 
 def prime_number(num1):
     
-    if num1%2 == 0 and num1 != 2:
+    if num1 % 2 == 0 and num1 != 2:
         return 'no'
-    if num1%3 == 0:
+    if num1 % 3 == 0:
         return 'no'
-    if num1%5 == 0:
+    if num1 % 5 == 0:
         return 'no'
-    if num1%7 == 0:
+    if num1 % 7 == 0:
         return 'no'
-    if num1%11 == 0:
+    if num1 % 11 == 0:
         return 'no'
     else:
         return 'yes'

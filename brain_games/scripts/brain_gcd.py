@@ -1,7 +1,8 @@
-from brain_games import cli
-import prompt  
-from math import gcd
 import random
+from math import gcd
+
+import prompt
+
 
 def main():    
     print('Welcome to the Brain Games!')
@@ -14,10 +15,9 @@ def main():
     if answer == expected_answer:
         print(f'Congratulations, {name}!')
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {expected_answer}.")
-        print (f"Let's try again, {name}!'")
-
-    
+        print(f"{answer} is wrong answer ;(."
+              + " Correct answer was {expected_answer}.")
+        print(f"Let's try again, {name}!'")
 
 
 def welcome_user():
@@ -25,8 +25,10 @@ def welcome_user():
     print(f'Hello, {name}!')
     return name
 
+
 def random_number():
     return random.randint(1, 100)
+
 
 def ask_question(name):
     num1 = random_number()
@@ -38,6 +40,7 @@ def ask_question(name):
         print('Correct!')
         return answer, expected_answer
     else:        
-        print(f"{answer} is wrong answer ;(. Correct answer was {expected_answer}.")
-        print (f"Let's try again, {name}!")
+        print(f"{answer} is wrong answer ;(."
+              + " Correct answer was {expected_answer}.")
+        print(f"Let's try again, {name}!")
         quit()

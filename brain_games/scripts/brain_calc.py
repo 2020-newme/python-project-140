@@ -1,6 +1,8 @@
-#from brain_games import cli
-import prompt
+# from brain_games import cli
 import random
+
+import prompt
+
 
 def main():    
     print('Welcome to the Brain Games!')
@@ -32,7 +34,8 @@ def ask_question(name):
     if was_correct:
         print('Correct!')
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answer}' is wrong answer ;(."
+              + " Correct answer was '{correct_answer}'.")
         print(f"Let's try again, {name}!")
     return was_correct
 
@@ -40,9 +43,11 @@ def ask_question(name):
 def random_number():
     return random.randint(1, 100)
 
+
 def random_oper():
-    op = ['+','-','*']
+    op = ['+', '-', '*']
     return random.choice(op)
+
 
 def get_correct_answer(num1, op, num2):
     if op == '-':
