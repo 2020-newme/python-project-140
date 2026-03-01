@@ -8,13 +8,11 @@ def main():
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print('What is the result of the expression?')
-    if not ask_question(name):
-        return
-    if not ask_question(name):
-        return
-    if not ask_question(name):
-        return
-    print(f'Congratulations, {name}!')
+
+    if (ask_question(name)
+            and ask_question(name)
+            and ask_question(name)):
+        print(f'Congratulations, {name}!')
 
 
 def welcome_user():
