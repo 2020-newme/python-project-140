@@ -40,7 +40,7 @@ def ask_question(name):
         print('Correct!')
         return answer, expected_answer
     else:        
-        print(f"{answer} is wrong answer ;(."
-              + " Correct answer was {expected_answer}.")
+        print(f"'{answer}' is wrong answer ;(."
+              + f" Correct answer was '{expected_answer}'.")
         print(f"Let's try again, {name}!")
         quit()
