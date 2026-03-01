@@ -11,11 +11,11 @@ def main():
     name = cli.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    ask_question(name)
-    ask_question(name)
-    ask_question(name)
+    if (ask_question(name)
+            and ask_question(name)
+            and ask_question(name)):
 
-    print(f'Congratulations, {name}!') 
+        print(f'Congratulations, {name}!') 
 
 
 def ask_question(name):
@@ -25,11 +25,12 @@ def ask_question(name):
     user_input = prompt.string('Your answer: ')
     if user_input == answer:
         print('Correct!')
+        return True
     else:
         print(f"'{user_input}' is wrong answer ;(."
               + f" Correct answer was '{answer}'.")
         print(f"Let's try again, {name}!")    
-        quit()
+        return False
 
 
 def random_number():

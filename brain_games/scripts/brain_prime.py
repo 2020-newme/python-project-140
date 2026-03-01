@@ -23,7 +23,7 @@ def main():
             print(f"'{answer}' is wrong answer ;(."
                    + f" Correct answer was '{expected_answer}'.")
             print(f"Let's try again, {name}!")
-            quit()
+            return
             
     print(f'Congratulations, {name}!')  
 

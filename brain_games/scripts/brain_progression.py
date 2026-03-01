@@ -9,10 +9,10 @@ def main():
     name = welcome_user()
     print('What number is missing in the progression?')
 
-    ask_question(name, num_prog)
-    ask_question(name, num_prog)
-    ask_question(name, num_prog)
-    print(f'Congratulations, {name}!')
+    if (ask_question(name, num_prog)
+            and ask_question(name, num_prog)
+            and ask_question(name, num_prog)):
+        print(f'Congratulations, {name}!')
 
 
 def welcome_user():
@@ -38,8 +38,9 @@ def ask_question(name, num_prog):
     expected_answer = int(hidden_num)
     if answer == expected_answer:
         print('Correct!')
+        return True
     else:
         print(f"'{answer}' is wrong answer ;(."
               + f" Correct answer was '{expected_answer}'.")
         print(f"Let's try again, {name}!'")
-        quit()
+        return False

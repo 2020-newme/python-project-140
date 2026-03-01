@@ -8,16 +8,10 @@ def main():
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print('Find the greatest common divisor of given numbers.')
-    answer, expected_answer = ask_question(name)
-    ask_question(name)
-    ask_question(name)
-
-    if answer == expected_answer:
+    if (ask_question(name)
+            and ask_question(name)
+            and ask_question(name)):
         print(f'Congratulations, {name}!')
-    else:
-        print(f"{answer} is wrong answer ;(."
-              + f" Correct answer was {expected_answer}.")
-        print(f"Let's try again, {name}!'")
 
 
 def welcome_user():
@@ -38,9 +32,9 @@ def ask_question(name):
     answer = prompt.integer('Your answer: ')
     if answer == expected_answer:   
         print('Correct!')
-        return answer, expected_answer
+        return True
     else:        
         print(f"'{answer}' is wrong answer ;(."
               + f" Correct answer was '{expected_answer}'.")
         print(f"Let's try again, {name}!")
-        quit()
+        return False
