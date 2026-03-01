@@ -40,15 +40,17 @@ def random_number():
 
 def prime_number(num1):
     
+    if num1 <= 1:
+        return 'no'
     if num1 % 2 == 0 and num1 != 2:
         return 'no'
-    if num1 % 3 == 0:
+    if num1 % 3 == 0 and num1 != 3:
         return 'no'
-    if num1 % 5 == 0:
+    if num1 % 5 == 0 and num1 != 5:
         return 'no'
-    if num1 % 7 == 0:
+    if num1 % 7 == 0 and num1 != 7:
         return 'no'
-    if num1 % 11 == 0:
+    if num1 % 11 == 0 and num1 != 11:
         return 'no'
     else:
         return 'yes'
