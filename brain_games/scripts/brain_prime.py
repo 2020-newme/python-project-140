@@ -20,8 +20,8 @@ def main():
             counter += 1
             
         else:
-            print(f"{answer} is wrong answer ;(."
-                   + " Correct answer was {expected_answer}.")
+            print(f"'{answer}' is wrong answer ;(."
+                   + f" Correct answer was '{expected_answer}'.")
             print(f"Let's try again, {name}!")
             quit()
             

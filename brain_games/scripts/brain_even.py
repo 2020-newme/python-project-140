@@ -27,7 +27,7 @@ def ask_question(name):
         print('Correct!')
     else:
         print(f"'{user_input}' is wrong answer ;(."
-              + " Correct answer was '{answer}'.")
+              + f" Correct answer was '{answer}'.")
         print(f"Let's try again, {name}!")    
         quit()
 

@@ -16,7 +16,7 @@ def main():
         print(f'Congratulations, {name}!')
     else:
         print(f"{answer} is wrong answer ;(."
-              + " Correct answer was {expected_answer}.")
+              + f" Correct answer was {expected_answer}.")
         print(f"Let's try again, {name}!'")
 
 
