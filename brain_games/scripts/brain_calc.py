@@ -2,7 +2,7 @@ import random
 
 import prompt
 
-from brain_games import cli
+from brain_games import cli, engine
 
 
 def main():    
@@ -22,7 +22,7 @@ def ask_question(name):
     num2 = random_number()
     print(f'Question: {num1} {op} {num2}')
     answer = prompt.integer('Your answer: ')
-    correct_answer = get_correct_answer(num1, op, num2)
+    correct_answer = engine.get_correct_answer(num1, op, num2)
     was_correct = answer == correct_answer
     if was_correct:
         print('Correct!')
@@ -42,10 +42,3 @@ def random_oper():
     return random.choice(op)
 
 
-def get_correct_answer(num1, op, num2):
-    if op == '-':
-        return num1 - num2
-    if op == '+':
-        return num1 + num2
-    if op == '*':
-        return num1 * num2

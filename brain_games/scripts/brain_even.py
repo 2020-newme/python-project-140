@@ -2,7 +2,7 @@ import random
 
 import prompt
 
-from brain_games import cli
+from brain_games import cli, engine
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
 
 def ask_question(name):
     num1 = random_number()
-    answer = even_number(num1)
+    answer = engine.even_number(num1)
     print(f'Question: {num1}')
     user_input = prompt.string('Your answer: ')
     if user_input == answer:
@@ -34,12 +34,7 @@ def ask_question(name):
 
 
 def random_number():
-    return random.randint(1, 100)
+    return random.randint(1, 99)
     
 
-def even_number(num1):
-    if num1 % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
     
