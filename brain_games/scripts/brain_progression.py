@@ -4,6 +4,7 @@ import prompt
 
 from brain_games import cli
 
+
 def main():
     num_prog = 10
     print('Welcome to the Brain Games!')

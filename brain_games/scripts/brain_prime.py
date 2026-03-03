@@ -1,8 +1,6 @@
-import random
-
 import prompt
 
-from brain_games import cli
+from brain_games import cli, engine
 
 
 def main():
@@ -12,7 +10,7 @@ def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     
     while counter < 3:
-        num1 = random_number()
+        num1 = engine.random_number()
         expected_answer = prime_number(num1)
         print(f'Question: {num1}')
         answer = prompt.string('Your answer: ')
@@ -28,11 +26,6 @@ def main():
             return
             
     print(f'Congratulations, {name}!')  
-
-
-
-def random_number():
-    return random.randint(1, 99)
 
 
 def prime_number(num1):

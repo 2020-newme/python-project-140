@@ -1,7 +1,8 @@
-from brain_games import cli
 import random
 
 import prompt
+
+from brain_games import cli
 
 
 def main():    
@@ -13,6 +14,7 @@ def main():
             and ask_question(name)
             and ask_question(name)):
         print(f'Congratulations, {name}!')
+
 
 def ask_question(name):
     num1 = random_number()

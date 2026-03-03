@@ -1,7 +1,9 @@
 import random
 from math import gcd
-from brain_games import cli
+
 import prompt
+
+from brain_games import cli
 
 
 def main():    
