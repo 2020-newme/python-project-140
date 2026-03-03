@@ -1,4 +1,4 @@
-# from brain_games import cli
+from brain_games import cli
 import random
 
 import prompt
@@ -6,20 +6,13 @@ import prompt
 
 def main():    
     print('Welcome to the Brain Games!')
-    name = welcome_user()
+    name = cli.welcome_user()
     print('What is the result of the expression?')
 
     if (ask_question(name)
             and ask_question(name)
             and ask_question(name)):
         print(f'Congratulations, {name}!')
-
-
-def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
-
 
 def ask_question(name):
     num1 = random_number()

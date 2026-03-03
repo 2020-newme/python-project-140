@@ -2,23 +2,18 @@ import random
 
 import prompt
 
+from brain_games import cli
 
 def main():
     num_prog = 10
     print('Welcome to the Brain Games!')
-    name = welcome_user()
+    name = cli.welcome_user()
     print('What number is missing in the progression?')
 
     if (ask_question(name, num_prog)
             and ask_question(name, num_prog)
             and ask_question(name, num_prog)):
         print(f'Congratulations, {name}!')
-
-
-def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
 
 
 def aritmetic_progression(num1, diff, num_prog):
