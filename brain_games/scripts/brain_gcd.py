@@ -24,8 +24,7 @@ def ask_question(name):
     if answer == expected_answer:   
         print('Correct!')
         return True
-    else:        
-        print(f"'{answer}' is wrong answer ;(."
-              + f" Correct answer was '{expected_answer}'.")
-        print(f"Let's try again, {name}!")
+    else:
+        cli.answer_is_wrong(answer, expected_answer, name)
+
         return False

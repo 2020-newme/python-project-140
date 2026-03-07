@@ -32,7 +32,6 @@ def ask_question(name, num_prog):
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(."
-              + f" Correct answer was '{expected_answer}'.")
-        print(f"Let's try again, {name}!'")
+        cli.answer_is_wrong(answer, expected_answer, name)
+
         return False

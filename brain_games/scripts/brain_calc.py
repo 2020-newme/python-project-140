@@ -26,9 +26,8 @@ def ask_question(name):
     if was_correct:
         print('Correct!')
     else:
-        print(f"'{answer}' is wrong answer ;(."
-              + f" Correct answer was '{correct_answer}'.")
-        print(f"Let's try again, {name}!")
+        cli.answer_is_wrong(answer, correct_answer, name)
+
     return was_correct
 
 
