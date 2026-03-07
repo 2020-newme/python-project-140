@@ -19,7 +19,7 @@ def main():
 
 
 def ask_question(name):
-    num1 = random_number()
+    num1 = engine.random_number()
     answer = engine.even_number(num1)
     print(f'Question: {num1}')
     user_input = prompt.string('Your answer: ')
@@ -33,8 +33,6 @@ def ask_question(name):
         return False
 
 
-def random_number():
-    return random.randint(1, 99)
     
 
     

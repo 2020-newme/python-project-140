@@ -17,9 +17,9 @@ def main():
 
 
 def ask_question(name):
-    num1 = random_number()
-    op = random_oper()
-    num2 = random_number()
+    num1 = engine.random_number()
+    op = engine.random_oper()
+    num2 = engine.random_number()
     print(f'Question: {num1} {op} {num2}')
     answer = prompt.integer('Your answer: ')
     correct_answer = engine.get_correct_answer(num1, op, num2)
@@ -32,13 +32,5 @@ def ask_question(name):
         print(f"Let's try again, {name}!")
     return was_correct
 
-
-def random_number():
-    return random.randint(1, 100)
-
-
-def random_oper():
-    op = ['+', '-', '*']
-    return random.choice(op)
 
 

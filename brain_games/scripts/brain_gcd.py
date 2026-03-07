@@ -5,6 +5,8 @@ import prompt
 
 from brain_games import cli
 
+from brain_games import engine
+
 
 def main():    
     print('Welcome to the Brain Games!')
@@ -16,13 +18,9 @@ def main():
         print(f'Congratulations, {name}!')
 
 
-def random_number():
-    return random.randint(1, 100)
-
-
 def ask_question(name):
-    num1 = random_number()
-    num2 = random_number()
+    num1 = engine.random_number()
+    num2 = engine.random_number()
     expected_answer = gcd(num1, num2)
     print(f'Question: {num1} {num2}')
     answer = prompt.integer('Your answer: ')

@@ -11,7 +11,7 @@ def main():
     
     while counter < 3:
         num1 = engine.random_number()
-        expected_answer = prime_number(num1)
+        expected_answer = engine.prime_number(num1)
         print(f'Question: {num1}')
         answer = prompt.string('Your answer: ')
 
@@ -27,20 +27,3 @@ def main():
             
     print(f'Congratulations, {name}!')  
 
-
-def prime_number(num1):
-    
-    if num1 <= 1:
-        return 'no'
-    if num1 % 2 == 0 and num1 != 2:
-        return 'no'
-    if num1 % 3 == 0 and num1 != 3:
-        return 'no'
-    if num1 % 5 == 0 and num1 != 5:
-        return 'no'
-    if num1 % 7 == 0 and num1 != 7:
-        return 'no'
-    if num1 % 11 == 0 and num1 != 11:
-        return 'no'
-    else:
-        return 'yes'

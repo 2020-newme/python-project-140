@@ -4,6 +4,8 @@ import prompt
 
 from brain_games import cli
 
+from brain_games import engine
+
 
 def main():
     num_prog = 10
@@ -17,15 +19,11 @@ def main():
         print(f'Congratulations, {name}!')
 
 
-def aritmetic_progression(num1, diff, num_prog):
-    return [str(num1 + i * diff) for i in range(num_prog)]
-
-
 def ask_question(name, num_prog):
     num1 = random.randint(1, 20)
     diff = random.randint(3, 20)
     
-    question = aritmetic_progression(num1, diff, num_prog)
+    question = engine.aritmetic_progression(num1, diff, num_prog)
     hide_pos = random.randint(1, num_prog - 1)
     hidden_num = question[hide_pos]
     question[hide_pos] = ".."
