@@ -4,11 +4,13 @@ import random
 def random_number():
     return random.randint(1, 99)
 
+
 def even_number(num1):
     if num1 % 2 == 0:
         return 'yes'
     else:
         return 'no'
+
 
 def get_correct_answer(num1, op, num2):
     if op == '-':
@@ -18,12 +20,15 @@ def get_correct_answer(num1, op, num2):
     if op == '*':
         return num1 * num2
 
+
 def aritmetic_progression(num1, diff, num_prog):
     return [str(num1 + i * diff) for i in range(num_prog)]
+
 
 def random_oper():
     op = ['+', '-', '*']
     return random.choice(op)
+
 
 def prime_number(num1):
     

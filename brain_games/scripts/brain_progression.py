@@ -2,9 +2,7 @@ import random
 
 import prompt
 
-from brain_games import cli
-
-from brain_games import engine
+from brain_games import cli, engine
 
 
 def main():
