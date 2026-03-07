@@ -1,4 +1,5 @@
 import random
+from math import gcd
 
 import prompt
 
@@ -64,6 +65,7 @@ def ask_question_even(name):
         cli.answer_is_wrong(user_input, answer, name)
         return False
 
+
 def ask_question_calc(name):
     num1 = random_number()
     op = random_oper()
@@ -79,6 +81,7 @@ def ask_question_calc(name):
 
     return was_correct
 
+
 def ask_question_gcd(name):
     num1 = random_number()
     num2 = random_number()
@@ -92,6 +95,7 @@ def ask_question_gcd(name):
         cli.answer_is_wrong(answer, expected_answer, name)
 
         return False
+
 
 def ask_question_progression(name, num_prog):
     num1 = random.randint(1, 20)

@@ -1,6 +1,4 @@
-import random
 
-import prompt
 
 from brain_games import cli, engine
 
