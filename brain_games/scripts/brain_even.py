@@ -14,8 +14,8 @@ def main():
             and ask_question(name)
             and ask_question(name)):
 
-        print(f'Congratulations, {name}!') 
-
+        print(f'Congratulations, {name}!')
+        
 
 def ask_question(name):
     num1 = engine.random_number()
@@ -26,9 +26,7 @@ def ask_question(name):
         print('Correct!')
         return True
     else:
-        print(f"'{user_input}' is wrong answer ;(."
-              + f" Correct answer was '{answer}'.")
-        print(f"Let's try again, {name}!")    
+        cli.answer_is_wrong(user_input, answer, name)
         return False
 
 
