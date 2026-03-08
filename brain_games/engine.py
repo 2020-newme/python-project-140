@@ -4,7 +4,8 @@ from math import gcd
 import prompt
 
 from brain_games import cli
-
+ 
+YOUR_ANSWER = 'Your answer: '
 
 def random_number():
     return random.randint(1, 99)
@@ -57,7 +58,7 @@ def ask_question_even(name):
     num1 = random_number()
     answer = even_number(num1)
     print(f'Question: {num1}')
-    user_input = prompt.string('Your answer: ')
+    user_input = prompt.string(YOUR_ANSWER)
     if user_input == answer:
         print('Correct!')
         return True
@@ -71,7 +72,7 @@ def ask_question_calc(name):
     op = random_oper()
     num2 = random_number()
     print(f'Question: {num1} {op} {num2}')
-    answer = prompt.integer('Your answer: ')
+    answer = prompt.integer(YOUR_ANSWER)
     correct_answer = get_correct_answer(num1, op, num2)
     was_correct = answer == correct_answer
     if was_correct:
@@ -87,7 +88,7 @@ def ask_question_gcd(name):
     num2 = random_number()
     expected_answer = gcd(num1, num2)
     print(f'Question: {num1} {num2}')
-    answer = prompt.integer('Your answer: ')
+    answer = prompt.integer(YOUR_ANSWER)
     if answer == expected_answer:   
         print('Correct!')
         return True
@@ -106,7 +107,7 @@ def ask_question_progression(name, num_prog):
     hidden_num = question[hide_pos]
     question[hide_pos] = ".."
     print(f'Question: {" ".join(question)}')
-    answer = prompt.integer('Your answer: ')
+    answer = prompt.integer(YOUR_ANSWER)
     expected_answer = int(hidden_num)
     if answer == expected_answer:
         print('Correct!')
