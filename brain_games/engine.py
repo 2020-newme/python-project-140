@@ -6,6 +6,7 @@ import prompt
 from brain_games import cli
  
 YOUR_ANSWER = 'Your answer: '
+CORRECT = 'Correct!'
 
 def random_number():
     return random.randint(1, 99)
@@ -60,7 +61,7 @@ def ask_question_even(name):
     print(f'Question: {num1}')
     user_input = prompt.string(YOUR_ANSWER)
     if user_input == answer:
-        print('Correct!')
+        print(CORRECT)
         return True
     else:
         cli.answer_is_wrong(user_input, answer, name)
@@ -76,7 +77,7 @@ def ask_question_calc(name):
     correct_answer = get_correct_answer(num1, op, num2)
     was_correct = answer == correct_answer
     if was_correct:
-        print('Correct!')
+        print(CORRECT)
     else:
         cli.answer_is_wrong(answer, correct_answer, name)
 
@@ -90,7 +91,7 @@ def ask_question_gcd(name):
     print(f'Question: {num1} {num2}')
     answer = prompt.integer(YOUR_ANSWER)
     if answer == expected_answer:   
-        print('Correct!')
+        print(CORRECT)
         return True
     else:
         cli.answer_is_wrong(answer, expected_answer, name)
@@ -110,7 +111,7 @@ def ask_question_progression(name, num_prog):
     answer = prompt.integer(YOUR_ANSWER)
     expected_answer = int(hidden_num)
     if answer == expected_answer:
-        print('Correct!')
+        print(CORRECT)
         return True
     else:
         cli.answer_is_wrong(answer, expected_answer, name)
