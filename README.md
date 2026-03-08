@@ -19,3 +19,5 @@ Instrucciones claras de instalación y ejecución
 Un asciinema integrado que muestre cada paso. En la grabación, debes mostrar cómo instalar la aplicación y jugar, incluyendo tanto un resultado exitoso como uno fallido
 
 ### Even or Odd
+
+<script src="https://asciinema.org/a/f6amLYB7xsOTbtdr.js" id="asciicast-f6amLYB7xsOTbtdr" async="true"></script>
