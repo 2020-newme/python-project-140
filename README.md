@@ -21,3 +21,6 @@ Un asciinema integrado que muestre cada paso. En la grabaci√≥n, debes mostrar c√
 ### Even or Odd
 
 [![asciicast](https://asciinema.org/a/f6amLYB7xsOTbtdr.svg)](https://asciinema.org/a/f6amLYB7xsOTbtdr)
+
+### Calculator
+[![asciicast](https://asciinema.org/a/WFiJj9kAsO5MGYzs.svg)](https://asciinema.org/a/WFiJj9kAsO5MGYzs)
