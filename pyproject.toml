@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "These are a series of mini-games that test your math skills."
-authors = [{name = "Dunny Apuy Achío", email = duapuy@gmail.com}]
+authors = [{name = "Dunny Apuy Achío", email = "duapuy@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

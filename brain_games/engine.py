@@ -8,6 +8,7 @@ from brain_games import cli
 YOUR_ANSWER = 'Your answer: '
 CORRECT = 'Correct!'
 
+
 def random_number():
     return random.randint(1, 99)
 
