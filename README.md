@@ -20,4 +20,4 @@ Un asciinema integrado que muestre cada paso. En la grabaci√≥n, debes mostrar c√
 
 ### Even or Odd
 
-<script src="https://asciinema.org/a/f6amLYB7xsOTbtdr.js" id="asciicast-f6amLYB7xsOTbtdr" async="true"></script>
+[![asciicast](https://asciinema.org/a/f6amLYB7xsOTbtdr.svg)](https://asciinema.org/a/f6amLYB7xsOTbtdr)
