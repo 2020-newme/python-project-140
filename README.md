@@ -24,3 +24,12 @@ Un asciinema integrado que muestre cada paso. En la grabaci√≥n, debes mostrar c√
 
 ### Calculator
 [![asciicast](https://asciinema.org/a/WFiJj9kAsO5MGYzs.svg)](https://asciinema.org/a/WFiJj9kAsO5MGYzs)
+
+### Progression
+[![asciicast](https://asciinema.org/a/NMikmYvT3ujodwOb.svg)](https://asciinema.org/a/NMikmYvT3ujodwOb)
+
+### GCD
+[![asciicast](https://asciinema.org/a/BbbKfK6FK6VJApCV.svg)](https://asciinema.org/a/BbbKfK6FK6VJApCV)
+
+### Prime
+[![asciicast](https://asciinema.org/a/xYLSG1WW10Hyyfo2.svg)](https://asciinema.org/a/xYLSG1WW10Hyyfo2)
